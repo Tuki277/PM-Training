@@ -1,7 +1,15 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
 .wrapper {
     width: 100%;
     height: 1000px;
     margin: auto;
+    margin-top: 15px;
 }
 
 .menu {
@@ -13,8 +21,8 @@
 
 .logo img {
     text-align: center;
-    width: 80px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .menu a {
@@ -55,21 +63,43 @@
 
 .content {
     width: 85%;
-    height: 1000px;
+    height: 985px;
     background-color: #EBEDEF;
     float: left;
+    border-top: none;
+}
+
+.acc i {
+    padding-top: -10px;
+}
+
+.acc {
+    margin-top: -30px;
+    /* background-color: red; */
+    float: right;
+}
+
+.acc img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50% 50% 50% 50%;
+    margin-top: -40px;
+}
+
+.acc div {
+    margin-top: -10px;
 }
 
 .title {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: white;
     margin-top: -15px;
 }
 
 .title p {
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .control {
@@ -93,7 +123,7 @@
 
 .control a {
     float: left;
-    color: black;
+    color: #6E7A8C;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 5px;
@@ -109,6 +139,7 @@
     height: 280px;
     background-color: white;
     margin-left: 15px;
+    margin-top: 15px;
 }
 
 .baoquanhtable p {
@@ -118,7 +149,7 @@
 
 .baoquanhtable .title p {
     padding-top: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #EBEDEF;
 }
 
 .table {
@@ -141,7 +172,7 @@ table {
 }
 
 table, th, td{
-    border:1px solid #D8DBE0;
+    border:2px solid #D8DBE0;
 }
 table{
     border-collapse:collapse;
@@ -150,6 +181,7 @@ table{
 .chan {
     width: 100%;
     height: 50px;
+    padding-top: 20px;
 }
 
 .left {
@@ -160,7 +192,6 @@ table{
 }
 
 .center {
-    padding-top: 15px;
     width: 150px;
     height: 20px;
     float: left;
@@ -169,8 +200,7 @@ table{
 
 .right {
     margin-right: -30px;
-    padding-top: 20px;
-    width: 200px;
+    width: 170px;
     height: 20px;
     float: right;
 }
@@ -187,4 +217,14 @@ table{
 .right a:hover {
     background-color: #321FDB;
     color: white;
+}
+
+.back {
+    width: 100%;;
+    height: 50px;
+}
+
+.back i {
+    padding-top: 15px;
+    padding-right: 20px;
 }
