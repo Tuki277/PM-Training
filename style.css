@@ -1,0 +1,190 @@
+.wrapper {
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+}
+
+.menu {
+    width: 15%;
+    height: 1000px;
+    float: left;
+    margin-top: 0px;
+}
+
+.logo img {
+    text-align: center;
+    width: 80px;
+    height: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-main ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.menu-main ul li {
+    padding: 20px;
+}
+
+.menu-main ul li:hover {
+    background-color: #3A427D;
+}
+
+.menu-main {
+    width: 100%;
+    height: 950px;
+    background-color: #3C4B64;
+    margin-top: -15px;
+}
+
+.logo {
+    text-align: center;
+    background-color: #303C54;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #303C54;
+}
+
+.content {
+    width: 85%;
+    height: 1000px;
+    background-color: #EBEDEF;
+    float: left;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    margin-top: -15px;
+}
+
+.title p {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.control {
+    width: 99%;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.control div {
+    width: 100px;
+    height: 30px;
+    padding-top: 2px;
+}
+
+.control span {
+    text-align: center;
+    padding-top: 5px;
+    display: block;
+}
+
+.control a {
+    float: left;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.control a:hover {
+    background-color: #3399FF;
+}
+
+.baoquanhtable {
+    width: 97%;
+    height: 280px;
+    background-color: white;
+    margin-left: 15px;
+}
+
+.baoquanhtable p {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.baoquanhtable .title p {
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+
+.table {
+    padding-top: 20px;
+    padding-left: 15px;
+    width: 97%;
+}
+
+th {
+    padding: 5px;
+}
+
+td {
+    padding-left: 5px;
+}
+
+table {
+    width: 101%;
+    height: 150px;
+}
+
+table, th, td{
+    border:1px solid #D8DBE0;
+}
+table{
+    border-collapse:collapse;
+}
+
+.chan {
+    width: 100%;
+    height: 50px;
+}
+
+.left {
+    width: 800px;
+    height: 20px;
+    float: left;
+    padding-left: 15px;
+}
+
+.center {
+    padding-top: 15px;
+    width: 150px;
+    height: 20px;
+    float: left;
+}
+
+
+.right {
+    margin-right: -30px;
+    padding-top: 20px;
+    width: 200px;
+    height: 20px;
+    float: right;
+}
+
+.right a {
+    text-align: center;
+    text-decoration: none;
+    color: #321FDB;
+    border: 0.5px solid #D8DBE0;
+    padding: 5px;
+    margin-right: -5px;
+}
+
+.right a:hover {
+    background-color: #321FDB;
+    color: white;
+}
