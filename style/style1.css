@@ -1,0 +1,218 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+.wrapper {
+    width: 1920px;
+    margin: auto;
+}
+
+.left {
+    width: 255px;
+    height: 1100px;
+    background-color: #363740;;
+    float: left;
+}
+
+.left ul {
+    border-top: 1px solid #40414A;
+    
+}
+
+.left a {
+    color: #DDE2FF;
+    text-decoration: none;
+    padding: auto;
+}
+
+.left li {
+    width: 255px;
+    height: 56px;
+    list-style: none;
+    border : 1px solid #363740;
+
+}
+
+.left li:hover {
+    background-color: #3F4049;
+    border-left : 3px solid #DDE2FF;
+}
+
+a {
+    display: block;
+    margin-top: 18px;
+    margin-left: 72px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+
+.logo {
+    width: 255px;
+    height: 71px;
+}
+
+/* Main ===================================================== */
+
+.main {
+    width: 1665px;
+    height: 1100px;
+    background-color: #F7F8FC;
+    float: left;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+/* title=================================================== */
+
+.title {
+    width: 1665px;
+    height: 71px;
+    background-color: #282932;
+}
+
+.title div {
+    float: left;
+}
+
+/* control =========================================== */
+
+.control {
+    width: 1251px;
+    height: 48px;
+    background-color: red;
+    margin-top: 24px;
+    margin-left: 30px;
+}
+
+/* table ========================================================= */
+
+.table {
+    display: block;
+    width: 1600px;
+    height: 865px;
+    background-color: white;
+    margin-top: 27px;
+    margin-left: 30px;
+    margin-bottom: 65px;
+    border: 2px solid #DFE0EB;
+}
+
+.table td {
+    width: 1599px;
+    height: 92px;
+}
+
+.table tr {
+    text-align: left;
+    width: 1599px;
+    height: 57px;
+}
+
+table, th, td{
+    border-bottom:2px solid #DFE0EB;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+.cot1 {
+    width: 15%;
+    padding-bottom: 2px;
+}
+
+th span {
+    padding-top: 12px;
+    display: block;
+}
+
+.rectangle {
+    width: 31px;
+    height: 39px;
+    background-color: #c4c4c4;
+    float: left;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    padding-bottom: -5px;
+    margin-bottom: -18px;
+    margin-left: -2px;
+    display: inline;
+}
+
+.cot2 {
+    width: 24%;
+}
+
+.cot3 {
+    width: 8%;
+}
+
+.cot4 {
+    width: 8%;
+}
+
+.cot5 {
+    width: 8%;
+}
+
+.cot6 {
+    width: 8%;
+}
+
+.cot7 {
+    width: 8%;
+}
+
+.cot8 {
+    width: 8%;
+}
+
+.cot9 {
+    width: 8%;
+}
+
+.dong1 {
+    padding-left: 31px;
+    padding-right: 0px;
+}
+
+.dong2 {
+    padding-right: 80px;
+}
+
+.dong3 {
+    padding-right: 20px;
+}
+
+.dong4 {
+    padding-right: 67px;
+}
+
+.dong5 {
+    padding-right: 34px;
+}
+
+.dong6 {
+    padding-right: 55px;
+}
+
+.dong7 {
+    padding-right: 25px;
+}
+
+.dong8 {
+    padding-right: 59px;
+}
+
+.dong9 {
+    padding-right: 50px;
+}
