@@ -44,8 +44,8 @@
 a {
     display: block;
     margin-top: 18px;
-    margin-left: 72px;
-    font-family: sans-serif;
+    margin-left: 75px;
+    font-family: Mulish;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -64,13 +64,12 @@ a {
     height: 1100px;
     background-color: #F7F8FC;
     float: left;
-    font-family: sans-serif;
+    font-family: Mulish;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.2px;
 }
-
 /* title=================================================== */
 
 .title {
@@ -79,21 +78,101 @@ a {
     background-color: #282932;
 }
 
-.title div {
+.app {
+    margin-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    color: white;
     float: left;
+}
+
+.app span {
+    font-size: 12px;
+}
+
+
+.all {
+    width: 1665px;
+    height: 71px;
+    padding-top: 14px;
+}
+
+.search {
+    float: right;
+    color: white;
+}
+
+.search input {
+    width: 316px;
+    height: 44px;
+}
+
+.search1 {
+    float: right;
+    color: white;
+    margin-left: 16px;
+}
+
+.search1 button {
+    width: 149px;
+    height: 44px;
+}
+
+.account {
+    margin-right: 33px;
+    margin-left: 30px;
+    float: right;
+    color: white;
+}
+
+.info {
+    float: right;
+    color: white;
+    margin-right: 24px;
+    padding-left: 20px;
+    border-left: 1px solid white;
 }
 
 /* control =========================================== */
 
 .control {
-    width: 1251px;
+    width: 1600px;
     height: 48px;
-    background-color: red;
     margin-top: 24px;
     margin-left: 30px;
 }
 
+.control button {
+    color: white;
+    background-color: #3751FF;
+    margin-top: -25px;
+    width: 168px;
+    height: 44px;
+    float: right;
+}
+
+.control span {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
 /* table ========================================================= */
+
+.page {
+    float: right;
+    margin-right: 27px;
+    margin-top: 20px;
+}
+
+.option {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
 
 .table {
     display: block;
