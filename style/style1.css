@@ -57,6 +57,28 @@ a {
     height: 71px;
 }
 
+.logo img {
+    width: 32px;
+    height: 32px;
+    margin-left: 32px;
+    margin-top: 20px;
+    float: left;
+}
+
+.logo span {
+    margin-top: 27px;
+    margin-left: 8px;
+    font-family: NanumGothic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 19px;
+    width: 66px;
+    height: 19px;
+    color: #838590;
+
+    float: left;
+}
 /* Main ===================================================== */
 
 .main {
@@ -86,6 +108,7 @@ a {
     line-height: 14px;
     color: white;
     float: left;
+    margin-top: 10px;
 }
 
 .app span {
@@ -107,6 +130,13 @@ a {
 .search input {
     width: 316px;
     height: 44px;
+    border-radius: 2px;
+    padding-left: 15px;
+    font-family: Mulish;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #CBCBCE;
 }
 
 .search1 {
@@ -120,7 +150,8 @@ a {
     height: 44px;
 }
 
-.account {
+.alert {
+    margin-top: 10px;
     margin-right: 33px;
     margin-left: 30px;
     float: right;
@@ -130,9 +161,40 @@ a {
 .info {
     float: right;
     color: white;
-    margin-right: 24px;
+    margin-right: 23px;
     padding-left: 20px;
     border-left: 1px solid white;
+}
+
+.info div {
+    width: 250px;
+    height: 18px;
+    text-align: right;
+    padding-right: 75px;
+    margin-left: -10px;
+}
+
+.accImg {
+    margin: -5px 10px 1px 0px;
+    width: 44px;
+    height: 44px;
+    float: right;
+    border: 1.5px solid white;
+    border-radius: 50% 50% 50% 50%;
+    padding: 2px;
+    display: block;
+}
+
+input[type="search"] {
+    font-family: FontAwesome;
+}
+
+.search1 button {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #282932;
+    color: white;
 }
 
 /* control =========================================== */
@@ -166,18 +228,21 @@ a {
     float: right;
     margin-right: 27px;
     margin-top: 20px;
+    padding-bottom: 27px;
+    color: #CBCBCE;
 }
 
 .option {
     float: right;
     margin-right: 50px;
     margin-top: 20px;
+    color: #CBCBCE;
 }
 
 .table {
     display: block;
     width: 1600px;
-    height: 865px;
+    height: 885px;
     background-color: white;
     margin-top: 27px;
     margin-left: 30px;
@@ -265,7 +330,7 @@ th span {
 }
 
 .dong2 {
-    padding-right: 80px;
+    padding-right: 70px;
 }
 
 .dong3 {
@@ -293,5 +358,5 @@ th span {
 }
 
 .dong9 {
-    padding-right: 50px;
+    
 }
