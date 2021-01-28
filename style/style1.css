@@ -5,14 +5,22 @@
     font-size: 100%;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
 .wrapper {
-    width: 1920px;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
 
 .left {
-    width: 255px;
-    height: 1100px;
+    /* width: 255px; */
+    width: 10%;
+    /* height: 1100px; */
+    height: 100%;
     background-color: #363740;;
     float: left;
 }
@@ -29,8 +37,10 @@
 }
 
 .left li {
-    width: 255px;
+    /* width: 255px; */
+    width : 100%;
     height: 56px;
+    /* height: 100%; */
     list-style: none;
     border : 1px solid #363740;
 
@@ -54,11 +64,14 @@ a {
     font-weight: normal;
     font-size: 16px;
     letter-spacing: 0.2px;
+    margin-right: 24px;
 }
 
 .logo {
-    width: 255px;
+    /* width: 255px; */
+    width : 100%;
     height: 71px;
+    display: inline-block;
 }
 
 .logo img {
@@ -86,8 +99,10 @@ a {
 /* Main ===================================================== */
 
 .main {
-    width: 1665px;
-    height: 1100px;
+    /* width: 1665px; */
+    width: 90%;
+    /* height: 1100px; */
+    height: 100%;
     background-color: #F7F8FC;
     float: left;
     font-family: Mulish;
@@ -95,11 +110,13 @@ a {
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.2px;
+    display: block;
 }
 /* title=================================================== */
 
 .title {
-    width: 1665px;
+    /* width: 1665px; */
+    width: 100%;
     height: 71px;
     background-color: #282932;
 }
@@ -121,7 +138,8 @@ a {
 
 
 .all {
-    width: 1665px;
+    /* width: 1665px; */
+    width: 100%;
     height: 71px;
     padding-top: 14px;
 }
@@ -204,8 +222,10 @@ input[type="search"] {
 /* control =========================================== */
 
 .control {
-    width: 1600px;
-    height: 48px;
+    /* width: 1600px; */
+   width: 97%;
+    /* height: 48px; */
+    height: 4%;
     margin-top: 24px;
     margin-left: 30px;
 }
@@ -234,6 +254,7 @@ input[type="search"] {
     margin-top: 20px;
     padding-bottom: 27px;
     color: #CBCBCE;
+    /* clear: both; */
 }
 
 .option {
@@ -245,8 +266,10 @@ input[type="search"] {
 
 .table {
     display: block;
-    width: 1600px;
-    height: 885px;
+    /* width: 1600px; */
+    width: 97%;
+    /* height: 885px; */
+    height: 69%;
     background-color: white;
     margin-top: 27px;
     margin-left: 30px;
@@ -255,13 +278,15 @@ input[type="search"] {
 }
 
 .table td {
-    width: 1599px;
+    /* width: 1599px; */
     height: 92px;
+    width: 10%;
 }
 
 .table tr {
     text-align: left;
-    width: 1599px;
+    /* width: 1599px; */
+    width: 97%;
     height: 57px;
 }
 

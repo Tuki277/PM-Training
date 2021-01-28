@@ -1,0 +1,83 @@
+.form {
+    width: 97%;
+    height: 86%;
+    background-color: red;
+    margin : 26px 35px 0px 30px;
+}
+
+.table1 {
+    width: 100%;
+    height: 25%;
+    background-color: #FFFFFF;
+    margin-bottom: 17px;
+    border-radius: 2px;
+}
+
+.t1d {
+    width: 100%;
+    height: 93px;
+}
+
+.t2d {
+    margin-top: 24px;
+    width: 100%;
+    height: 40px;
+}
+
+.t2d div {
+    float: left;
+}
+
+.t2d select {
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+}
+
+.table1 div div {
+    width: 25%;
+    height: 76px;
+    margin: 27px 25px 0px 32px;
+}
+
+.table1 div input {
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+}
+
+.table1 div label {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.table2 {
+    width: 100%;
+    height: 35%;
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.table3 {
+    width: 100%;
+    height: 30%;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.button {
+    width: 332px;
+    height: 40px;
+    background-color: brown;
+    margin-top: 16px;
+    margin-right: 35px;
+    float: right;
+}
