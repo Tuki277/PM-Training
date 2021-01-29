@@ -1,13 +1,12 @@
 .form {
     width: 97%;
     height: 86%;
-    background-color: red;
     margin : 26px 35px 0px 30px;
 }
 
 .table1 {
     width: 100%;
-    height: 25%;
+    height: 22%;
     background-color: #FFFFFF;
     margin-bottom: 17px;
     border-radius: 2px;
@@ -26,13 +25,23 @@
 
 .t2d div {
     float: left;
+    margin-bottom: 30px;
 }
 
 .t2d select {
+    padding: 5px;
     border: 1px solid #c4c4c4;
     border-radius: 2px;
     width: 100%;
     height: 40px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #676871;
+    margin-top: 4px;
+    background-color: #F2F2F2;
 }
 
 .table1 div div {
@@ -73,11 +82,50 @@
     border-radius: 2px;
 }
 
+/* ======================================================= */
+
 .button {
+    /* background-color: red; */
     width: 332px;
     height: 40px;
-    background-color: brown;
     margin-top: 16px;
-    margin-right: 35px;
+    margin-right: 0px;
     float: right;
+}
+
+.button button {
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+}
+
+.b1 {
+    width: 30%;
+    margin-right: 8px;
+    float: left;
+}
+
+.b1 button {
+    color: red;
+}
+
+.b2 {
+    width: 25%;
+    margin-right: 8px;
+    float: left;
+}
+
+.b2 button {
+    background-color: #27AE60;
+    color: white;
+}
+
+.b3 {
+    width: 40%;
+    float: left;
+}
+
+.b3 button {
+    background-color: #3751FF;
+    color: white;
 }
