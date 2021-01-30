@@ -102,95 +102,230 @@
             </div>
 
             <div class="form">
-                <div class="table1">
-                    <form action="">
 
-                        <div class="t1d">
-                            <div style="float: left;">
-                                <label style="margin-bottom: 10px;">Người đặt hàng</label>
-                                <input type="text">
-                            </div>
-
-                            <div style="float: left; margin-left: 0px;">
-                                <label>Phòng ban</label>
-                                <input type="text">
-                            </div>
-                        </div>
-
-                        <div class="t2d">
-                            <div>
-                                <label>Tiêu đề</label>
-                                <input type="text">
-                            </div>
-
-                            <div style="margin-left: 0px; margin-top: 30px">
-                                <label>Hạng mục</label>
-                                <select name="" id="">
-                                    <option value="chon hang muc">Chọn hạng mục</option>
-                                </select>
-                            </div>
-
-                            <div style="width: 8%; height : 40px; float: left; margin-left: 0px; margin-top: 30px">
-                                <label>Theo kế hoạch tháng</label>
-                                <select name="" id="">
-                                    <option value="chon hang muc">Tháng 11</option>
-                                </select>
-                            </div>
-
-                            <div style="width: 8%; height : 40px; float: left; margin-left: -3px; margin-top: 30px">
-                                <label>Năm</label>
-                                <select name="" id="">
-                                    <option value="chon hang muc">Tháng 11</option>
-                                </select>
-                            </div>
-
-                            <div style="float: left; margin-left: 25px; margin-right: 26px;">
-                                <label>Dòng ngân sách</label>
-                                <input type="text">
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-
-                <div class="table2">
-
-                </div>
-
-                <div class="table3">
-                    <div class="t2d">
-                        <div>
+                <form action="" class="form1">
+                    <div class="t1">
+                        <div style="margin-top: 27px; margin-left: 32px;">
                             <label>Người đặt hàng</label>
+                            <input type="text" placeholder="Trần Đình Thủy">
+                        </div>
+
+                        <div style="margin-top: 24px; margin-left: 32px;">
+                            <label>Tiêu đề</label>
                             <input type="text">
                         </div>
+                    </div>
 
-                        <div style="margin-left: 0px; margin-top: 30px">
-                            <label>Phòng ban liên quan</label>
-                            <select name="" id="">
-                                <option value="chon hang muc">Chọn hạng mục</option>
+                    <div class="t2">
+                        <div style="margin-top: 27px; margin-left: 25px;">
+                            <label>Phòng ban</label>
+                            <input type="text" placeholder="Phòng Công Nghệ Thông Tin">
+                        </div>
+
+                        <div style="margin-top: 24px; margin-left: 25px;">
+                            <label>Tiêu đề</label>
+                            <select name="" id="" style="background-color:#F2F2F2;">
+                                <option value="1">Chọn hạng mục</option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="t1d">
-                        <div style="float: left;">
-                            <label>Người đặt hàng</label>
-                            <input type="text">
-                        </div>
+                    <div class="t3">
+                        <label>Theo kế hoạch tháng</label>
+                        <select name="" id="" style="background-color:#F2F2F2;">
+                            <option value="1">Tháng 11</option>
+                        </select>
+                    </div>
 
-                        <div style="margin-left: 0px; margin-top: 30px; float: left;">
-                            <input type="text" style="width: 74%;">
-                            <button style="width: 25%; height: 40px; margin-left: -4px">import</button>
+                    <div class="t4">
+                        <label>Năm</label>
+                        <select name="" id="" style="background-color:#F2F2F2;" >
+                            <option value="1">Tháng 11</option>
+                        </select>
+                    </div>
+
+                    <div class="t5">
+                        <label>Dòng ngân sách</label>
+                        <input type="text">
+                    </div>
+
+                </form>
+
+
+
+                <form action="" class="form2">
+
+                    <div class="f22">
+                        <label for="">Chọn tệp</label>
+                        <div>
+                            <div class="f2t1">
+                                <input type="text" placeholder="Chọn tệp">
+                            </div>
+                            <div>
+                                <button class="f2b1" style="margin-left: 8px">
+                                    <div><img src="./images/icon13.png" alt=""></div>
+                                    Import
+                                </button>
+
+                                <button class="f2b2" style="margin-left: 8px">
+                                    <div><img src="./images/icon15.png" alt=""></div>
+                                    Tải về file mẫu
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+
+                    <div class="f21">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 179px; height: 60px;">Mã SAP (nếu có)</th>
+                                    <th style="width: 299px; height: 60px;">Tên vật tư, hàng hóa, dịch vụ</th>
+                                    <th style="width: 98px; height: 60px;">ĐVT</th>
+                                    <th style="width: 94px; height: 60px;">Tồn kho hiện tại</th>
+                                    <th style="width: 98px; height: 60px;">Số lượng đề xuất</th>
+                                    <th style="width: 176px; height: 60px;">Đơn giá dự kiến (chưa VAT)</th>
+                                    <th style="width: 175px; height: 60px;">Thành tiền</th>
+                                    <th style="width: 175px; height: 60px;">NCC</th>
+                                    <th style="width: 175px; height: 60px;">Ngày cần hàng về</th>
+                                    <th style="width: 67px; height: 60px;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> <span>400000694</span></td>
+                                    <td> <span style="padding: 1.5% 60% 1.5% 2%; text-align: left;">Ấm đun hồng trà 5L</span></td>
+                                    <td><span>Cái</span></td>
+                                    <td><span>12</span></td>
+                                    <td><span>30</span></td>
+                                    <td><span>345,000</span></td>
+                                    <td><span>10,350,000</span></td>
+                                    <td><span>Thanh Vân</span></td>
+                                    <td><span>15/4/2020</span></td>
+                                    <td>
+                                        <button>
+                                            <img src="./images/icon14.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> <span>400000694</span></td>
+                                    <td> <span style="padding: 1.5% 60% 1.5% 2%; text-align: left;">Ấm đun hồng trà 5L</span></td>
+                                    <td><span>Cái</span></td>
+                                    <td><span>12</span></td>
+                                    <td><span>30</span></td>
+                                    <td><span>345,000</span></td>
+                                    <td><span>10,350,000</span></td>
+                                    <td><span>Thanh Vân</span></td>
+                                    <td><span>15/4/2020</span></td>
+                                    <td>
+                                        <button>
+                                            <img src="./images/icon14.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> <span>400000694</span></td>
+                                    <td> <span style="padding: 1.5% 60% 1.5% 2%; text-align: left;">Ấm đun hồng trà 5L</span></td>
+                                    <td><span>Cái</span></td>
+                                    <td><span>12</span></td>
+                                    <td><span>30</span></td>
+                                    <td><span>345,000</span></td>
+                                    <td><span>10,350,000</span></td>
+                                    <td><span>Thanh Vân</span></td>
+                                    <td><span>15/4/2020</span></td>
+                                    <td>
+                                        <button>
+                                            <img src="./images/icon14.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="margin-left: -50%">
+                                            <button class="fix">
+                                                <div><img src="./images/icon16.png" alt="" style="float: left; display: block; margin-top: -4px;"></div>
+                                                Thêm mới
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </form>
+
+
+
+                <form action="" class="form3">
+                    <div class="t2">
+                        <div style="margin-top: 27px; margin-left: 25px;">
+                            <label>Người đặt hàng</label>
+                            <input type="text" placeholder="33,520,000" style="border: solid 1px #DFE0EB;">
+                            <p style="
+                                font-family: Mulish;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 15px;
+                                line-height: 20px;
+                                letter-spacing: 0.2px;
+                                color: #FF0000;">( BA MƯƠI BA TRIỆU NĂM TRĂM HAI MƯƠI NGHÌN ĐỒNG )</ơ>
+                        </div>
+
+                        <div style="margin-top: 24px; margin-left: 25px;">
+                            <label>Thời gian hoàn thành dự kiến</label>
+                            <select name="" id="" style="background-color:#F2F2F2;">
+                                <option value="1">Chọn thời gian</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="t2">
+                        <div style="margin-top: 28px; margin-left: 25px;">
+                            <label>Thời gian hoàn thành dự kiến</label>
+                            <select name="" id="" style="background-color:#F2F2F2;">
+                                <option value="1">Chọn thời gian</option>
+                            </select>
+                        </div>
+
+                        <div style="width: 92%;margin-top: 40px; margin-left: 25px; float: left;">
+                            <label for="">File đính kem</label>
+                            <div>
+                                <div class="f31">
+                                    <input type="text" style="border: solid 1px #DFE0EB; width: 100%;">
+                                </div>
+                                <div class="f32">
+                                    <button>
+                                        <div><img src="./images/icon13.png" alt=""></div>
+                                        Import
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="f33">
+                        <label for="">Nội dung đề xuất</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                </form>
+
 
                 <div class="button">
-
                     <div class="b1">
                         <button>
-                            <div style="float: left; margin-left: 16.5px; margin-right: -16.5px;">
+                            <div>
                                 <img src="./images/icon12.png" alt="">
                             </div>
                             Button
@@ -199,7 +334,7 @@
 
                     <div class="b2">
                         <button>
-                            <div style="float: left; margin-left: 16.5px; margin-right: -16.5px;">
+                            <div>
                                 <img src="./images/icon10.png" alt="">
                             </div>
                             Lưu
@@ -209,12 +344,12 @@
                     <div class="b3">
                         <button>
                             <div>
-                                <img src="./images/icon11.png" alt=""
-                                    style="float: left; margin-left: 16.5px; margin-right: -16.5px; margin-top: 5px;">
+                                <img src="./images/icon11.png" alt="">
                             </div>
                             Gửi yêu cầu
                         </button>
                     </div>
+
 
                 </div>
             </div>
