@@ -178,6 +178,7 @@ a {
     margin-left: 30px;
     float: right;
     color: white;
+    display: block;
 }
 
 .info {

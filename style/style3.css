@@ -1,0 +1,45 @@
+.a {
+    margin-right: 100px;
+}
+
+th td tr span {
+    padding: 0%;
+    margin: 0%;
+    width: 0%;
+}
+
+table {
+    width: 100.3%;
+    height: 100%;
+    background-color: white;
+}
+
+td {
+    margin-bottom : 10px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+th {
+    width: 8%;
+}
+
+td {
+    width: 20%;
+}
+
+span {
+    margin-bottom : 10px;
+}
+
+.size1 {
+    width: 3.5%;
+    text-align: center;
+}
+
+.input-group input {
+    padding-bottom: 100px;
+}

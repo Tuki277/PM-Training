@@ -1,151 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-    <div class="wrapper">
-        <div class="menu">
-            <div class="menu-main">
-                <ul>
-                    <li class="logo" style="padding: 0px;"><a href="#">
-                        <img src="./logo.png" alt="LOGO">
-                    </a></li>
-                    <li><a href="#"> <i class="fas fa-briefcase"></i> &ensp; Quản lý hợp đồng</a></li>
-                    <li><a href="#"> <i class="far fa-calendar-check"></i> &ensp; BC DT xuất hóa đơn HĐA</a></li>
-                    <li><a href="#"><i class="fas fa-chart-line"></i> &ensp; Báo cáo quản trị</a></li>
-                </ul>
-            </div>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <div class="footer">
-                <div class="back">
-                    <a href="#"><i style="float: right;" class="fas fa-chevron-left"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-            <div class="title">
-                <div>
-                    <p><i class="fas fa-briefcase"></i> &ensp; Quản lý hợp đồng</p>
-                </div>
-
-                <div class="acc">
-                    <i class="far fa-moon fa-2x"></i>
-                    <div style="padding-left: 50px;">
-                        <img src="./bgc.jpg" alt="acc">
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="control">
-                <a href="#">
-                    <div>
-                        <div>
-                            <span> <i class="fas fa-plus"></i> &ensp; Thêm mới</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <span> <i class="fas fa-upload"></i> &ensp; Nhập file</span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div>
-                        <span> <i class="fas fa-download"></i> &ensp; Xuất file</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="baoquanhtable">
-                <div class="title">
-                    <p>Danh sách hợp đồng A</p>
-                </div>
-
-                <div class="table">
-                    <table>
-                        <thead>
-                            <tr style="text-align: center;">
-                                <th> ... </th>
-                                <th>Mã hợp đồng</th>
-                                <th>Tên hợp đồng</th>
-                                <th>Số hợp đồng</th>
-                                <th>Line quản lý HĐ</th>
-                                <th>Chủ đầu tư</th>
-                                <th>Ngày ký hợp đồng</th>
-                                <th>Ngày thực tế khởi công</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;">...</td>
-                                <td style="color: #3399FF;">PC1.Z.5.X.1.01.18.001</td>
-                                <td>ĐZ500KV Sông Hậu-Đức Hòa (gói 4)</td>
-                                <td>0001/HĐXL-SPMB-PCC1</td>
-                                <td>EPC</td>
-                                <td>Khánh Hưng</td>
-                                <td style="text-align: center;">02/01/2018</td>
-                                <td style="text-align: center;" >02/01/2018</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center;">...</td>
-                                <td style="color: #3399FF;">PC1.Z.5.X.1.01.18.001</td>
-                                <td>ĐZ500KV Sông Hậu-Đức Hòa (gói 4)</td>
-                                <td>0001/HĐXL-SPMB-PCC1</td>
-                                <td>EVN</td>
-                                <td>Hòa Phát</td>
-                                <td style="text-align: center;" >02/01/2018</td>
-                                <td style="text-align: center;" >02/01/2018</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center;">...</td>
-                                <td style="color: #3399FF;">PC1.Z.5.X.1.01.18.001</td>
-                                <td>ĐZ500KV Sông Hậu-Đức Hòa (gói 4)</td>
-                                <td>0001/HĐXL-SPMB-PCC1</td>
-                                <td>PCC1_TL</td>
-                                <td>Thành Phát</td>
-                                <td style="text-align: center;" >02/01/2018</td>
-                                <td style="text-align: center;" >02/01/2018</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="chan">
-                    <div class="left">
-                        <p>Hiển thị kết quả từ 1 - 10 trên tổng 100</p>
-                    </div>
-
-                    <div class="center">
-                        Hiển thị
-                        <select class="arrows">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        kết quả
-                    </div>
-
-                    <div class="right">
-                        <a href="#" style="border-radius: 10px 0px 0px 10px;"><i class="fas fa-step-backward"></i></a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#" style="border-radius: 0px 10px 10px 0px;"><i class="fas fa-step-forward"></i></a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container-fluid">
+        
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
