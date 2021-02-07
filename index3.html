@@ -117,10 +117,50 @@
                             <i class="fas fa-long-arrow-alt-right"></i>
                             Gửi yêu cầu
                         </button>
-                        <button type="button" class="btn btn-success btn-xs float-right mr-2">
+                        <button type="button" class="btn btn-success btn-xs float-right mr-2" data-toggle="modal" data-target="#modalNotification">
                             <i class="far fa-save"></i>
                             Lưu
                         </button>
+
+                        <!-- Modal1 -->
+
+                        <div class="modal fade" id="modalNotification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Bạn có chắc chắn muốn thực hiện thao tác này ?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSuccess">OK</button>
+
+                                        <!-- Modal2 -->
+                                        <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Thành Công
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="col-12 mt-3">
@@ -438,7 +478,7 @@
                                     </div>
 
                                     <div class="col-3 ml-3">
-                                        <button type="button" class="btn btn-success btn-xs float-left mr-2 mt-4">
+                                        <button type="button" class="btn btn-success btn-xs float-left mr-2 mt-4" data-toggle="modal" data-target="#modalNotification">
                                             <i class="fas fa-paperclip"></i>
                                             Lưu
                                         </button>
@@ -446,6 +486,44 @@
                                             <i class="fas fa-long-arrow-alt-right"></i>
                                             Gửi yêu cầu
                                         </button>
+
+                                        <div class="modal fade" id="modalNotification" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Bạn có chắc chắn muốn thực hiện thao tác này ?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSuccess">OK</button>
+
+                                                        <!-- Modal2 -->
+                                                        <div class="modal fade" id="modalSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Thành Công
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
