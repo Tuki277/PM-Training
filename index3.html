@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="./style/style3.css">
+    <!-- <link rel="stylesheet" href="./style/styleTest.css"> -->
 
 </head>
 
@@ -27,13 +28,14 @@
             <div class="logo">
                 <img src="./images/Untitled.png" alt="Logo">
                 <span>SPS VN</span>
-                <img src="./images/icon7.png" alt="" style="width: 24px;
-                height: 24px; margin-top: 24px; margin-right: 17px; float: right">
+                <button type="button" data-toggle="collapse" data-target="#showForm" aria-expanded="false" aria-controls="showForm" style="background-color: #363740; width: 10%; height: 0%; float: right;"><img src="./images/icon7.png" alt="" style="width: 24px;
+                    height: 24px; margin-top: 24px; margin-right: 17px; float: right">
+                </button>
 
             </div>
 
-            <div style="display: block;">
-                <ul>
+            <div class="collapse navbar-collapse" id="showForm" >
+                <u>
                     <li><a href="#" style="margin-left: 32px"> <img src="./images/icon1.png" style="margin-right: 24px">
                             Pending Requests</a></li>
                     <li><a href="#">Phát sinh chờ duyệt</a></li>
@@ -50,7 +52,7 @@
                             Danh mục hệ thống</a></li>
                     <li style="border-top: 1px solid #40414A;"><a href="#" style="margin-left: 32px"> <img
                                 src="./images/icon2.png" style="margin-right: 24px"> Quản trị hệ thống</a></li>
-                </ul>
+                </u>
             </div>
 
         </div>
@@ -183,19 +185,19 @@
                                                 <span class="ml-4">Người tạo</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Trần Đình Thủy (thuytd)</span>
+                                                <span id="NguoiTao" class="ml-4"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">Bộ phận</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Phòng Công nghệ thông tin</span>
+                                                <span id= "BoPhan" class="ml-4"></span>
                                             </td>
                                             <th style="width: 20%;">
                                                 <span class="ml-4">Ngày tạo</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">30/8/2020</span>
+                                                <span id="NgayTao" class="ml-4"></span>
                                             </td>
                                         </tr>
                                     </thead>
@@ -206,22 +208,22 @@
                                                 <span class="ml-4">Người xử lý</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Amy Trường (amytruong)</span>
+                                                <span id="NguoiXuLY" class="ml-4"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">Trạng thái</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4 text-warning">
+                                                <span class="ml-4 text-warning" id="TrangThai">
                                                     <i class="fas fa-stop-circle mr-2"></i>
-                                                    Chờ GĐ C.CU duyệt
+                                                    
                                                 </span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">Ngày gửi</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">23/10/2020</span>
+                                                <span class="ml-4" id="NgayGui"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -229,19 +231,19 @@
                                                 <span class="ml-4">Theo kế hoạch tháng</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Tháng 8</span>
+                                                <span class="ml-4" id="TheoKeHoachThang"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">Năm</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">2020</span>
+                                                <span class="ml-4" id="Nam"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">Thuộc</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Ngoài ngân sách</span>
+                                                <span class="ml-4" id="Thuoc"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -249,19 +251,19 @@
                                                 <span class="ml-4">Số tiền dự trù</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">21,000,000</span>
+                                                <span class="ml-4" id="SoTienDuTru"></span>
                                             </td>
                                             <th style="width: 20%">
                                                 <span class="ml-4">Thời gian bàn giao cho bộ phận</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">29/09/2020</span>
+                                                <span class="ml-4" id="ThoiGianBanGiao"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4"> Nhà cung cấp</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4"></span>
+                                                <span class="ml-4" id="NhaCungCap"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -270,9 +272,7 @@
                                             </th>
                                             <td colspan="2" style="margin-right: -50px;">
                                                 <div class="col-8 ml-2 mt-2 mb-1">
-                                                    <span>[HN] Đơn giá: 375.000đ (chưa bao gồm VAT 10%)
-                                                        Chủng loại: Inox 304. KT: 540*300*40mm
-                                                        Tài liệu đính kèm: báo giá, KHMH, bản vẽ thiết kế</span>
+                                                    <span id="TieuDe"></span>
                                                 </div>
 
                                             </td>
@@ -280,7 +280,7 @@
                                                 <span class="ml-4">Nội dung đề xuất</span>
                                             </th>
                                             <td colspan="2">
-                                                <span class="ml-4">Đề xuất theo nội dung</span>
+                                                <span class="ml-4" id="NoiDungDeXuat"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -288,13 +288,13 @@
                                                 <span class="ml-4">Phòng ban liên quan</span>
                                             </th>
                                             <td colspan="3">
-                                                <span class="ml-4"></span>
+                                                <span class="ml-4" id="PhongBanLienQuan"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">ý kiến trợ lý</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4"></span>
+                                                <span class="ml-4" id="YKienTroLy"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -302,13 +302,13 @@
                                                 <span class="ml-4">Thời gian xử lý</span>
                                             </th>
                                             <td colspan="3">
-                                                <span class="ml-4"></span>
+                                                <span class="ml-4" id="ThoiGianXuLy"></span>
                                             </td>
                                             <th>
                                                 <span class="ml-4">Mua sắm</span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Tập trung</span>
+                                                <span class="ml-4" id="MuaSap"></span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -316,10 +316,8 @@
                                                 <span class="ml-4">Phối hợp view</span>
                                             </th>
                                             <td colspan="5">
-                                                <span class="ml-4">
-                                                    Khải Lê (khaile.cio)
-                                                    Trần Đình Thủy (thuytd)
-                                                    Amy Trường (amytruong)
+                                                <span class="ml-4" id="PhoiHopView">
+                                                    
                                                 </span>
                                             </td>
 
@@ -329,9 +327,9 @@
                                                 <span class="ml-4">Danh sách PO</span>
                                             </th>
                                             <td colspan="3">
-                                                <span class="ml-4 float-left mt-2">
+                                                <span class="ml-4 float-left mt-2" id="DanhSachPO">
 
-                                                    PO/CNTT/239/08/2020
+                                                    
                                                 </span>
                                                 <div class="text-primary float-left mt-2">
                                                     <i class="far fa-edit fa-lg ml-4"></i>
@@ -400,25 +398,45 @@
                                     <tbody>
                                         <tr>
                                             <th class="size1">
-                                                <span>1</span>
+                                                <span id="stt"></span>
                                             </th>
                                             <td>
-                                                <span class="ml-4">Amy Trường (amytruong)</span>
-                                            </td>
-                                            <td>
-                                                <span class="ml-4">Trạng thái</span>
-                                            </td>
-                                            <td>
-                                                <span class="ml-4">Phê duyệt</span>
+                                                <span class="ml-4" id="NguoiThucHien"></span>
                                             </td>
                                             <td>
                                                 <span class="ml-4"></span>
                                             </td>
                                             <td>
-                                                <span class="ml-4">23/10/2020</span>
+                                                <span class="ml-4" id="PheDuyet"></span>
+                                            </td>
+                                            <td>
+                                                <span class="ml-4"></span>
+                                            </td>
+                                            <td>
+                                                <span class="ml-4" id="NoiDung"></span>
                                             </td>
                                         </tr>
                                         <tr>
+                                            <th class="size1">
+                                                <span id="stt1"></span>
+                                            </th>
+                                            <td>
+                                                <span class="ml-4" id="NguoiThucHien1"></span>
+                                            </td>
+                                            <td>
+                                                <span class="ml-4"></span>
+                                            </td>
+                                            <td>
+                                                <span class="ml-4" id="PheDuyet1"></span>
+                                            </td>
+                                            <td>
+                                                <span class="ml-4"></span>
+                                            </td>
+                                            <td>
+                                                <span class="ml-4" id="NoiDung1"></span>
+                                            </td>
+                                        </tr>
+                                        <!-- <tr>
                                             <th class="size1">
                                                 <span>2</span>
                                             </th>
@@ -437,7 +455,7 @@
                                             <td>
                                                 <span class="ml-4">23/10/2020</span>
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
 
                                 </table>
@@ -482,7 +500,7 @@
                                             <i class="fas fa-paperclip"></i>
                                             Lưu
                                         </button>
-                                        <button type="button" class="btn btn-primary btn-xs float-left mt-4">
+                                        <button type="button" class="btn btn-primary btn-xs float-left mt-4" onclick="apiTable()">
                                             <i class="fas fa-long-arrow-alt-right"></i>
                                             Gửi yêu cầu
                                         </button>
@@ -535,6 +553,7 @@
 
     </div>
     </div>
+    <script src="./javascript/api.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

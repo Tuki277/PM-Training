@@ -1,3 +1,30 @@
+.navbar-collapse {
+    position: fixed;
+    /* top: 50px; */
+    left: 0;
+    /* padding-left: 15px; */
+    padding-right: 5px;
+    /* padding-bottom: 15px; */
+    /* width: 50%; */
+    margin-top: -7px;
+    background-color: #363740;
+    height: 100%;
+}
+
+.navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+}
+
+.navbar-collapse.show {
+    left: 0;
+    transition: left 500ms ease-in-out;
+}
+
+.navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
+}
+
 *{ 
     margin: 0;
     padding: 0;
@@ -14,15 +41,14 @@ html, body {
     width: 100%;
     height: 100%;
     /* background-color: red; */
-    background-color: #F7F8FC;
 }
 
 .left {
     /* width: 255px; */
     width: 10%;
     /* height: 1100px; */
-    height: 100%;
-    /* background-color: #363740;; */
+    /* height: 100%; */
+    background-color: brown;
     float: left;
 }
 
@@ -104,7 +130,7 @@ a {
     /* width: 1665px; */
     width: 90%;
     /* height: 1100px; */
-    height: 100%;
+    /* height: 100%; */
     background-color: #F7F8FC;
     float: left;
     font-family: Mulish;
@@ -391,32 +417,4 @@ th span {
 
 .dong9 {
     
-}
-
-.navbar-collapse {
-    position: fixed;
-    display: block;
-    /* top: 50px; */
-    left: 0;
-    /* padding-left: 15px; */
-    padding-right: 5px;
-    /* padding-bottom: 15px; */
-    /* width: 50%; */
-    margin-top: -7px;
-    background-color: #363740;
-    height: 100%;
-}
-
-.navbar-collapse.collapsing {
-    left: -75%;
-    transition: height 0s ease;
-}
-
-.navbar-collapse.show {
-    left: 0;
-    transition: left 500ms ease-in-out;
-}
-
-.navbar-toggler.collapsed ~ .navbar-collapse {
-    transition: left 500ms ease-in-out;
 }
