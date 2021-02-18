@@ -119,7 +119,7 @@
                             <i class="fas fa-long-arrow-alt-right"></i>
                             Gửi yêu cầu
                         </button>
-                        <button type="button" class="btn btn-success btn-xs float-right mr-2" data-toggle="modal" data-target="#modalNotification">
+                        <button type="button" class="btn btn-success btn-xs float-right mr-2" data-toggle="modal" data-target="#modalNotification" onclick="saveForm()">
                             <i class="far fa-save"></i>
                             Lưu
                         </button>
@@ -168,197 +168,197 @@
                     <div class="col-12 mt-3">
                         <div class="col-12 pl-3">
                             <div>
-                                <table class="table-bordered ml-0">
-                                    <thead>
-                                        <tr style="background: #E0E0E0;">
-                                            <th colspan="6">
-                                                <span class="ml-4 text-primary">
-                                                    Thông tin chi tiết yêu cầu
-                                                    <div class="float-right text-black-50">
-                                                        <i class="fas fa-chevron-down fa-lg mr-3"></i>
+                                <form action="">
+                                    <table class="table-bordered ml-0">
+                                        <thead>
+                                            <tr style="background: #E0E0E0;">
+                                                <th colspan="6">
+                                                    <span class="ml-4 text-primary">
+                                                        Thông tin chi tiết yêu cầu
+                                                        <div class="float-right text-black-50">
+                                                            <i class="fas fa-chevron-down fa-lg mr-3"></i>
+                                                        </div>
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Người tạo</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="NguoiTao"><span class="ml-4"></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Bộ phận</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text"><span id= "BoPhan" class="ml-4"></span>
+                                                </td>
+                                                <th style="width: 20%;">
+                                                    <span class="ml-4">Ngày tạo</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="NgayTao"><span class="ml-4"></span>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+    
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4" >Người xử lý</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="NguoiXuLY"><span  class="ml-4"></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Trạng thái</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="TrangThai"><span class="ml-4 text-warning" >
+                                                        <i class="fas fa-stop-circle mr-2 float-left ml-4"></i>
+                                                        
+                                                    </span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Ngày gửi</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="NgayGui"><span class="ml-4" ></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Theo kế hoạch tháng</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="TheoKeHoachThang"><span class="ml-4" ></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Năm</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="Nam"><span class="ml-4" ></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Thuộc</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="Thuoc"><span class="ml-4" ></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Số tiền dự trù</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="SoTienDuTru"><span class="ml-4"></span>
+                                                </td>
+                                                <th style="width: 20%">
+                                                    <span class="ml-4">Thời gian bàn giao cho bộ phận</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="ThoiGianBanGiao"><span class="ml-4"></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4"> Nhà cung cấp</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="NhaCungCap"><span class="ml-4"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Tiêu đề (V/v)</span>
+                                                </th>
+                                                <td colspan="2" style="margin-right: -50px;">
+                                                    <div class="col-8 ml-2 mt-2 mb-1">
+                                                        <input type="text" id="TieuDe"><span></span>
                                                     </div>
-                                                </span>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Người tạo</span>
-                                            </th>
-                                            <td>
-                                                <span id="NguoiTao" class="ml-4"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Bộ phận</span>
-                                            </th>
-                                            <td>
-                                                <span id= "BoPhan" class="ml-4"></span>
-                                            </td>
-                                            <th style="width: 20%;">
-                                                <span class="ml-4">Ngày tạo</span>
-                                            </th>
-                                            <td>
-                                                <span id="NgayTao" class="ml-4"></span>
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Người xử lý</span>
-                                            </th>
-                                            <td>
-                                                <span id="NguoiXuLY" class="ml-4"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Trạng thái</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4 text-warning" id="TrangThai">
-                                                    <i class="fas fa-stop-circle mr-2"></i>
-                                                    
-                                                </span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Ngày gửi</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="NgayGui"></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Theo kế hoạch tháng</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="TheoKeHoachThang"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Năm</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="Nam"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Thuộc</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="Thuoc"></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Số tiền dự trù</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="SoTienDuTru"></span>
-                                            </td>
-                                            <th style="width: 20%">
-                                                <span class="ml-4">Thời gian bàn giao cho bộ phận</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="ThoiGianBanGiao"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4"> Nhà cung cấp</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="NhaCungCap"></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Tiêu đề (V/v)</span>
-                                            </th>
-                                            <td colspan="2" style="margin-right: -50px;">
-                                                <div class="col-8 ml-2 mt-2 mb-1">
-                                                    <span id="TieuDe"></span>
-                                                </div>
-
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Nội dung đề xuất</span>
-                                            </th>
-                                            <td colspan="2">
-                                                <span class="ml-4" id="NoiDungDeXuat"></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Phòng ban liên quan</span>
-                                            </th>
-                                            <td colspan="3">
-                                                <span class="ml-4" id="PhongBanLienQuan"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">ý kiến trợ lý</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="YKienTroLy"></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Thời gian xử lý</span>
-                                            </th>
-                                            <td colspan="3">
-                                                <span class="ml-4" id="ThoiGianXuLy"></span>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">Mua sắm</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4" id="MuaSap"></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Phối hợp view</span>
-                                            </th>
-                                            <td colspan="5">
-                                                <span class="ml-4" id="PhoiHopView">
-                                                    
-                                                </span>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                <span class="ml-4">Danh sách PO</span>
-                                            </th>
-                                            <td colspan="3">
-                                                <span class="ml-4 float-left mt-2" id="DanhSachPO">
-
-                                                    
-                                                </span>
-                                                <div class="text-primary float-left mt-2">
-                                                    <i class="far fa-edit fa-lg ml-4"></i>
-                                                    <i class="fas fa-clipboard-check fa-lg ml-2"></i>
-                                                    <i class="fas fa-file-excel fa-lg ml-2"></i>
-                                                    <i class="far fa-comment-alt fa-lg ml-2"></i>
-                                                </div>
-                                            </td>
-                                            <th>
-                                                <span class="ml-4">File PO Tổng hợp</span>
-                                            </th>
-                                            <td>
-                                                <span class="ml-4 text-primary"><i
-                                                        class="fas fa-file-excel fa-lg"></i></span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="1">
-                                                <span class="ml-4">File đính kèm</span>
-                                            </th>
-                                            <th colspan="5">
-
-                                            </th>
-
-
-                                        </tr>
-                                    </tbody>
-
-                                </table>
+    
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Nội dung đề xuất</span>
+                                                </th>
+                                                <td colspan="2">
+                                                    <input type="text" id="NoiDungDeXuat"><span class="ml-4"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Phòng ban liên quan</span>
+                                                </th>
+                                                <td colspan="3">
+                                                    <input type="text" id="PhongBanLienQuan"><span class="ml-4"></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">ý kiến trợ lý</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="YKienTroLy"><span class="ml-4"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Thời gian xử lý</span>
+                                                </th>
+                                                <td colspan="3">
+                                                    <input type="text" id="ThoiGianXuLy"><span class="ml-4"></span>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">Mua sắm</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="MuaSap"><span class="ml-4"></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Phối hợp view</span>
+                                                </th>
+                                                <td colspan="5">
+                                                    <input type="text" id="PhoiHopView"><span class="ml-4">
+                                                        
+                                                    </span>
+                                                </td>
+    
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <span class="ml-4">Danh sách PO</span>
+                                                </th>
+                                                <td colspan="3">
+                                                    <input type="text" id="DanhSachPO" style="float: left;"><span class="ml-4 float-left mt-2">
+                                                    </span>
+                                                    <div class="text-primary float-left mt-2">
+                                                        <i class="far fa-edit fa-lg ml-4"></i>
+                                                        <i class="fas fa-clipboard-check fa-lg ml-2"></i>
+                                                        <i class="fas fa-file-excel fa-lg ml-2"></i>
+                                                        <i class="far fa-comment-alt fa-lg ml-2"></i>
+                                                    </div>
+                                                </td>
+                                                <th>
+                                                    <span class="ml-4">File PO Tổng hợp</span>
+                                                </th>
+                                                <td>
+                                                    <input type="text"> <span class="ml-4 text-primary"><i
+                                                            class="fas fa-file-excel fa-lg"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="1">
+                                                    <span class="ml-4">File đính kèm</span>
+                                                </th>
+                                                <th colspan="5">
+    
+                                                </th>
+    
+    
+                                            </tr>
+                                        </tbody>
+    
+                                    </table>
+                                </form>
                             </div>
 
                             <div>
@@ -401,10 +401,10 @@
                                                 <span id="stt"></span>
                                             </th>
                                             <td>
-                                                <span class="ml-4" id="NguoiThucHien"></span>
+                                                <span class="ml-4" id="Ngay"></span>
                                             </td>
                                             <td>
-                                                <span class="ml-4"></span>
+                                                <span class="ml-4" id="NguoiThucHien"></span>
                                             </td>
                                             <td>
                                                 <span class="ml-4" id="PheDuyet"></span>
@@ -421,10 +421,10 @@
                                                 <span id="stt1"></span>
                                             </th>
                                             <td>
-                                                <span class="ml-4" id="NguoiThucHien1"></span>
+                                                <span class="ml-4" id="Ngay1"></span>
                                             </td>
                                             <td>
-                                                <span class="ml-4"></span>
+                                                <span class="ml-4" id="NguoiThucHien1"></span>
                                             </td>
                                             <td>
                                                 <span class="ml-4" id="PheDuyet1"></span>
@@ -565,6 +565,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        var dataAdd2 = [
+            {
+                stt : 1,
+                Ngay : "Amy Trường (amytruong)",
+                NguoiThucHien : "Trạng Thái",
+                PheDuyet : "Phê duyệt",
+                TrangThai : " ",
+                NoiDung : "23/10/2020"
+            },
+            {
+                stt : 2,
+                Ngay : "Amy Trường (amytruong)",
+                NguoiThucHien : "Trạng Thái",
+                PheDuyet : "Chuyển xử lý",
+                TrangThai : " ",
+                NoiDung : "23/10/2020"
+            },
+        ]
+
+        localStorage.setItem('Duyet', JSON.stringify(dataAdd2))
+
+        var a = JSON.parse(localStorage.getItem('Duyet'))
+        document.getElementById('stt').innerHTML = a[0].stt
+        document.getElementById('Ngay').innerHTML = a[0].Ngay
+        document.getElementById('NguoiThucHien').innerHTML = a[0].NguoiThucHien
+        document.getElementById('PheDuyet').innerHTML = a[0].PheDuyet
+        document.getElementById('NoiDung').innerHTML = a[0].NoiDung
+        document.getElementById('stt1').innerHTML = a[1].stt
+        document.getElementById('Ngay1').innerHTML = a[1].Ngay
+        document.getElementById('NguoiThucHien1').innerHTML = a[1].NguoiThucHien
+        document.getElementById('PheDuyet1').innerHTML = a[1].PheDuyet
+        document.getElementById('NoiDung1').innerHTML = a[1].NoiDung
+    </script>
 </body>
 
 </html>
